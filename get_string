@@ -10,7 +10,7 @@ char *get_string()
 	while(fgets(buffer,num,stdin))
 	{
 		len+=strlen(buffer);
-		if(string[len-1]=='\n') // ну, собственно строкой мы считаем все до перевода строки
+		if(string[len-1]=='\n')
 		{
 			string[len-1] = '\0'; // \n нам ни к чему
 			return string;

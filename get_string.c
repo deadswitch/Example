@@ -1,7 +1,7 @@
 char *get_string()
 {
 	size_t size = 2; // размер буффера
-	register const unsigned char num = size; // максимальное количество символов помещаемых в буффер
+	const unsigned char num = size; // максимальное количество символов помещаемых в буффер
 	unsigned int len = 0; // длина от начала строки
 	char *buffer = (char*)malloc(size*sizeof(char)); // выделяем память под буффер
 	if(!buffer) return NULL;
